@@ -31,7 +31,7 @@
    ========================================================================== */
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: #545454;
@@ -116,7 +116,7 @@ input[type="submit"] {
 	background-color: transparent;
 	color: #a6a6a6;
 	font-weight: 400;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #000;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -157,7 +157,7 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
 
 h1, h2, h3, h4, h5 {
 	font-weight: 400;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -191,7 +191,7 @@ h5 {
 	font-size: 18px;
 }
 .title-divider {
-	width: 70px;
+	width: 320px;
 	height: 5px;
 	background-color: #ffb400;
 	margin: 30px 0 50px 0
@@ -212,7 +212,7 @@ h5 {
 .button {
 	border: 2px solid #ffb400;
 	background-color: #FFF;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	color: #000;
 	font-size: 16px;
@@ -418,7 +418,7 @@ h5 {
 	outline: none;
 	margin: 0 30px;
 	border-bottom: 1px solid #333333;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	color: #FFF;
@@ -479,7 +479,7 @@ h5 {
 	position: absolute;
 	bottom: 5px;
 	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	padding: 30px;
 	color: #747474;
@@ -498,7 +498,7 @@ h5 {
 	height: 100%;
 }
 .content-wrapper {
-	width: 7356px;
+	width: 8456px;
 	position: absolute;
 	height: 100%;
 	overflow: hidden;
@@ -508,7 +508,7 @@ h5 {
 	background-color: #000;
 }
 .content {
-	width: 804px;
+	width: 904px;
 	overflow-y: scroll;
 	height: 100%;
 	float: left;
@@ -593,9 +593,10 @@ a.totop-link {
 .introduction img {
 	/*position: absolute;*/
 	z-index: -1;
-	height: 100%;
-	width: 100%;
-	float: left;
+	/* height: 100%; */
+	width: 70%;
+	float: right;
+	padding-top: 40px;
 }
 .introduction .owl-carousel {
 	height: 100%;
@@ -619,7 +620,7 @@ a.totop-link {
 	margin-bottom: 35px
 }
 .introduction .inner {
-	margin: 50% 0 0 0;
+	margin: 35% 0 0 0;
 	position:absolute;
 	z-index:2;
 }
@@ -720,7 +721,7 @@ a.totop-link {
 	min-height: 3px
 }
 .progress-value span {
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 	position: absolute;
@@ -762,7 +763,7 @@ a.totop-link {
 	line-height: 110px;
 	z-index: 2;
 	font-size: 40px;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: -1px;
 	margin: 21px 0 0 0;
@@ -771,7 +772,7 @@ a.totop-link {
 .percent:after {
 	content: '%';
 	margin-left: 0.1em;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 100;
 }
 .angular {
@@ -999,7 +1000,7 @@ a.totop-link {
 }
 .introduction-end-con {
 	float: left;
-	margin: 25% 0 0 10%;
+	margin: 20% 0 0 5%;
 	width: 30%;
 }
 .introduction-end-con h3 {
@@ -1018,7 +1019,7 @@ a.totop-link {
 	font-weight: 300;
 	color: #ffb400;
 	font-size: 55px;
-	font-family: 'Oswald', sans-serif;
+	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: 25px 0;
 }
 
