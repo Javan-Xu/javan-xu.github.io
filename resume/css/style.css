@@ -178,12 +178,12 @@ h2 span {
 	font-weight: 300
 }
 h3 {
-	font-size: 16px;
+	font-size: 22px;
 	margin: 50px 0 10px;
 }
 h4 {
-	font-size: 25px;
-	font-weight: 100;
+	font-size: 20px;
+	/*font-weight: 100;*/
 	line-height: 30px;
 	margin: 0;
 }
@@ -194,13 +194,13 @@ h5 {
 	width: 320px;
 	height: 5px;
 	background-color: #ffb400;
-	margin: 30px 0 50px 0
+	margin: 30px 0 40px 0
 }
 .full-divider {
 	width: 100%;
 	height: 1px;
 	background-color: #dfdfdf;
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 	clear: both;
 }
 .gray-bg {
@@ -593,7 +593,7 @@ a.totop-link {
 .introduction img {
 	/*position: absolute;*/
 	z-index: -1;
-	/* height: 100%; */
+	 /*height: 100%; */
 	width: 70%;
 	float: right;
 	padding-top: 40px;
@@ -620,7 +620,7 @@ a.totop-link {
 	margin-bottom: 35px
 }
 .introduction .inner {
-	margin: 35% 0 0 0;
+	margin: 34% 0 0 5%;
 	position:absolute;
 	z-index:2;
 }
@@ -797,7 +797,7 @@ a.totop-link {
 .experience-con .icon-block i {
 	font-size: 60px;
 	color: #ffb400;
-	margin: 8px 0 0
+	margin-bottom: 20px;
 }
 .experience-con h5 {
 	margin: 5px 0 7px 0
