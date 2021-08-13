@@ -481,7 +481,7 @@ h5 {
 	text-transform: uppercase;
 	font-family: '微軟正黑體', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 11px;
-	padding: 30px;
+	padding: 30px 20px;
 	color: #747474;
 	line-height: 18px;
 	letter-spacing: 1px
@@ -707,7 +707,7 @@ a.totop-link {
 
 .progress {
 	background: #d4d4d4;
-	width: 86%;
+	width: 90%;
 	float: right;
 	position: relative;
 	top: 10px;
@@ -736,7 +736,7 @@ a.totop-link {
 .progress-bar-description {
 	font-weight: 400;
 	color: #000;
-	margin: 0 0 0 100px;
+	margin: 0 0 0 10%;
 	font-size: 14px;
 	height: 10px;
 }
