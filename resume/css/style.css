@@ -404,10 +404,10 @@ h5 {
 	height: 100%;
 }
 .menu nav {
-	position: absolute;
+	/*position: absolute;*/
 	/*top: 220px;*/
-	left: 0px;
-	right: 0px;
+	left: 0;
+	right: 0;
 	/*bottom: 50px;*/
 	width: 200px !important;
 }
