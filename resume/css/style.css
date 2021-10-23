@@ -186,7 +186,7 @@ h4 {
 	font-size: 18px;
 	/*font-weight: 100;*/
 	/*line-height: 30px;*/
-	/*margin: 0;*/
+	margin: 15px 0 5px 0;
 }
 h5 {
 	font-size: 16px;
@@ -824,10 +824,10 @@ a.totop-link {
 	-webkit-transition-duration: .2s;
 	-o-transition-duration: .2s;
 }
-.experience-details:hover i {
-	font-size: 73px;
-	color: #000;
-}
+/*.experience-details:hover i {*/
+/*	font-size: 73px;*/
+/*	color: #000;*/
+/*}*/
 .experience-details:hover .col-3 {
 	width: 29%;
 	transition-duration: .2s;
