@@ -1179,9 +1179,11 @@
 					// reload: 'strict',
 					reload: true,
 					complete: function(){
+						console.log('complete');
 						$('.jBox-wrapper').focus();
 					},
 					success: function(){
+						console.log('success');
 						$('.jBox-wrapper').focus();
 					}
 				}
