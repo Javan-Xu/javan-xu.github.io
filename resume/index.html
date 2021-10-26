@@ -1176,8 +1176,11 @@
 					cancelAjaxOnClose: true,
 					reload: 'strict',
 					complete: function(){
-						alert('kkk');
+						alert('complete');
 						$('.jBox-wrapper').focus();
+					},
+					success: function(){
+						alert('success');
 					}
 				}
 			}).open();
