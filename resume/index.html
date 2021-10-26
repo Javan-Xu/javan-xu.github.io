@@ -1174,7 +1174,11 @@
 				ajax: {
 					url: 'https://javan-xu.github.io/resume/project.html#/'+project_id,
 					cancelAjaxOnClose: true,
-					reload: 'strict'
+					reload: 'strict',
+					complete: function(){
+						alert('kkk');
+						$('.jBox-wrapper').focus();
+					}
 				}
 			}).open();
 		}
