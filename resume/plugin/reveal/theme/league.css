@@ -113,9 +113,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-size: var(--r-heading4-size);
 }
 
-.reveal h1 {
-  text-shadow: var(--r-heading1-text-shadow);
-}
+/*.reveal h1 {*/
+/*  text-shadow: var(--r-heading1-text-shadow);*/
+/*}*/
 
 /*********************************************
  * OTHER
