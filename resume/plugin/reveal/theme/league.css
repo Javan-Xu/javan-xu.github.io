@@ -56,17 +56,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-family: var(--r-main-font);
   font-size: var(--r-main-font-size);
   font-weight: normal;
-  color: var(--r-main-color);
+  /*color: var(--r-main-color);*/
 }
 
 .reveal ::selection {
-  color: var(--r-selection-color);
+  /*color: var(--r-selection-color);*/
   background: var(--r-selection-background-color);
   text-shadow: none;
 }
 
 .reveal ::-moz-selection {
-  color: var(--r-selection-color);
+  /*color: var(--r-selection-color);*/
   background: var(--r-selection-background-color);
   text-shadow: none;
 }
