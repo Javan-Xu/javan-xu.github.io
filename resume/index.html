@@ -19,6 +19,12 @@
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<!-- Responsive -->
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!-- Pie Chart / Skills -->
+<!--	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>-->
+	<!-- jBox -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container" class="container">
@@ -492,7 +498,8 @@
 									<section class="grid-wrap">
 										<ul class="grid">
 											<li>
-												<figure> <img src="files/projects/ALLION_DCS/DeviceControlSystem_ALL.png">
+												<figure onclick="show_project_slide('0');">
+													<img src="files/projects/ALLION_DCS/DeviceControlSystem_ALL.png">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>設備管理系統</h1>
@@ -507,7 +514,34 @@
 												</figure>
 											</li>
 											<li>
-												<figure> <img src="files/projects/REIJU_NexBIM/NexBIM智能建築監控平台.png">
+												<figure onclick="show_project_slide('1');">
+													<img src="files/projects/REIJU_BIMIoT/自動化安全監測網站.png">
+													<figcaption>
+														<div class="figcaption-details">
+															<h1>工區自動化安全監測系統</h1>
+															<h2>系統分析與程式開發</h2>
+															<img src="images/icon-plus.png" height="82" width="82" alt="">
+															<h3>結合BIM與IoT感測技術開發, 提升工區職業安全防護效益。</h3>
+														</div>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure onclick="show_project_slide('2');">
+													<img src="files/projects/REIJU_EMISSION/任務指派系統_系統架構圖_v20151119-1.png">
+													<figcaption>
+														<div class="figcaption-details">
+															<h1>任務管理系統</h1>
+															<h2>系統分析與程式開發</h2>
+															<img src="images/icon-plus.png" height="82" width="82" alt="">
+															<h3>以網站系統、行動載具APP及桌面程式架構，<br>系統化各項工作任務指派、回報及通知作業，強化企業競爭力。</h3>
+														</div>
+													</figcaption>
+												</figure>
+											</li>
+											<li>
+												<figure onclick="show_project_slide('3');">
+													<img src="files/projects/REIJU_NexBIM/NexBIM智能建築監控平台.png">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>NexBIM智能建築監控平台</h1>
@@ -520,19 +554,8 @@
 												</figure>
 											</li>
 											<li>
-												<figure> <img src="files/projects/REIJU_BIMIoT/自動化安全監測網站.png">
-													<figcaption>
-														<div class="figcaption-details">
-															<h1>工區自動化安全監測系統</h1>
-															<h2>系統分析與程式開發</h2>
-															<img src="images/icon-plus.png" height="82" width="82" alt="">
-															<h3>結合BIM與IoT感測技術開發, 提升工區職業安全防護效益。</h3>
-														</div>
-													</figcaption>
-												</figure>
-											</li>
-											<li>
-												<figure> <img src="files/projects/REIJU_REVITAPI/REIJU_REVITAPI.png">
+												<figure onclick="show_project_slide('4');">
+													<img src="files/projects/REIJU_REVITAPI/REIJU_REVITAPI.png">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>Revit釋疑單管理系統</h1>
@@ -543,20 +566,10 @@
 													</figcaption>
 												</figure>
 											</li>
+
 											<li>
-												<figure> <img src="files/projects/REIJU_EMISSION/任務指派系統_系統架構圖_v20151119-1.png">
-													<figcaption>
-														<div class="figcaption-details">
-															<h1>任務管理系統</h1>
-															<h2>系統分析與程式開發</h2>
-															<img src="images/icon-plus.png" height="82" width="82" alt="">
-															<h3>以網站系統、行動載具APP及桌面程式架構，<br>系統化各項工作任務指派、回報及通知作業，強化企業競爭力。</h3>
-														</div>
-													</figcaption>
-												</figure>
-											</li>
-											<li>
-												<figure> <img src="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.jpg">
+												<figure onclick="show_project_slide('5');">
+													<img src="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.jpg">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>中興大學圖書館自動化相關系統</h1>
@@ -572,7 +585,8 @@
 												</figure>
 											</li>
 											<li>
-												<figure> <img src="files/projects/NCHU_APP/NCHULIB-APP.jpg">
+												<figure onclick="show_project_slide('6');">
+													<img src="files/projects/NCHU_APP/NCHULIB-APP.jpg">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>中興大學圖書館APP</h1>
@@ -589,19 +603,8 @@
 												</figure>
 											</li>
 											<li>
-												<figure> <img src="files/projects/NCHU_STATUS/NCHU_STATUS.jpg">
-													<figcaption>
-														<div class="figcaption-details">
-															<h1>中興大學圖書館-網站服務監測系統</h1>
-															<h2>系統建置、管理與維護</h2>
-															<img src="images/icon-plus.png" height="82" width="82" alt="">
-															<h3>監測全館一百餘項資訊系統及設備服務狀態，<br>主動發送Hangouts、Email及手機簡訊，即時掌握各類服務狀態。</h3>
-														</div>
-													</figcaption>
-												</figure>
-											</li>
-											<li>
-												<figure> <img src="files/projects/NCHU_APPS/NCHU_APPS-STATUS.jpg">
+												<figure onclick="show_project_slide('7');">
+													<img src="files/projects/NCHU_APPS/NCHU_APPS-STATUS.jpg">
 													<figcaption>
 														<div class="figcaption-details">
 															<h1>中興大學圖書館-各類應用系統</h1>
@@ -612,11 +615,25 @@
 													</figcaption>
 												</figure>
 											</li>
+											<li>
+												<figure onclick="show_project_slide('8');">
+													<img src="files/projects/NCHU_STATUS/NCHU_STATUS.jpg">
+													<figcaption>
+														<div class="figcaption-details">
+															<h1>中興大學圖書館-網站服務監測系統</h1>
+															<h2>系統建置、管理與維護</h2>
+															<img src="images/icon-plus.png" height="82" width="82" alt="">
+															<h3>監測全館一百餘項資訊系統及設備服務狀態，<br>主動發送Hangouts、Email及手機簡訊，即時掌握各類服務狀態。</h3>
+														</div>
+													</figcaption>
+												</figure>
+											</li>
 										</ul>
 									</section>
 
 									<!-- Lightbox Popup -->
 									<!-- li的項目數量要跟前面專案數量一致，否則專案跟圖片對應會亂掉 -->
+									<!--
 									<section class="slideshow">
 										<ul>
 											<li>
@@ -628,27 +645,27 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>透過Function Check Tool進行Android及iPhone藍牙交互配對及解除配對</h5>
-															<iframe width="700" height="394" src="https://www.youtube.com/embed/wjYroJXrTxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+															<iframe width="700" height="394" src="https://www.youtube.com/embed/wjYroJXrTxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
 														<div class="item">
 															<h5>所有設備併發同步執行</h5>
-															<iframe width="700" height="394" src="https://www.youtube.com/embed/7e03E68vgoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+															<iframe width="700" height="394" src="https://www.youtube.com/embed/7e03E68vgoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
 														<div class="item">
 															<h5>設備控制系統執行Console</h5>
-															<img src="files/projects/ALLION_DCS/DeviceControlSystem_Console.png">
+															<img src="files/projects/ALLION_DCS/DeviceControlSystem_Console.png" />
 														</div>
 														<div class="item">
 															<h5>由系統自動擷取生成的API Document</h5>
-															<img src="files/projects/ALLION_DCS/DeviceControlSystem_APIDoc.png">
+															<img src="files/projects/ALLION_DCS/DeviceControlSystem_APIDoc.png" />
 														</div>
 														<div class="item">
 															<h5>用來快速檢核設備相容性的Function Check Tool</h5>
-															<iframe width="700" height="394" src="https://www.youtube.com/embed/AKbyuu95D3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+															<iframe width="700" height="394" src="https://www.youtube.com/embed/AKbyuu95D3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
 														<div class="item">
 															<h5>檢視來自各設備控制主機Log的Dashboard</h5>
-															<img src="files/projects/ALLION_DCS/DeviceControlSystem_LD.png">
+															<img src="files/projects/ALLION_DCS/DeviceControlSystem_LD.png" />
 														</div>
 													</div>
 												</figure>
@@ -662,22 +679,22 @@
 													</figcaption>
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/以BIM3D模型為基礎的設施維運平台.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/以BIM3D模型為基礎的設施維運平台.png" /></a>
 														</div>
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/具備完整派工作業及報表功能.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/具備完整派工作業及報表功能.png" /></a>
 														</div>
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/完成之權限控管.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/完成之權限控管.png" /></a>
 														</div>
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/模型資料匯入及符合國際標準.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/模型資料匯入及符合國際標準.png" /></a>
 														</div>
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/SCADA及3D監控人機介面.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/SCADA及3D監控人機介面.png" /></a>
 														</div>
 														<div class="item">
-															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/APP行動載具系統.png"></a>
+															<a href="http://nexbim.reiju.com.tw/" target="_blank"><img src="files/projects/REIJU_NexBIM/APP行動載具系統.png" /></a>
 														</div>
 													</div>
 												</figure>
@@ -693,43 +710,43 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>整合「安全監測」及「天氣資訊」之自動化安全監測系統</h5>
-															<img src="files/projects/REIJU_BIMIoT/自動化安全監測網站.png">
+															<img src="files/projects/REIJU_BIMIoT/自動化安全監測網站.png" />
 														</div>
 														<div class="item">
-															<h5>自動化安全監測系統-安全監測</h5>
-															<img src="files/projects/REIJU_BIMIoT/監測網站-安全監測.png">
+															<h5>安全監測</h5>
+															<img src="files/projects/REIJU_BIMIoT/監測網站-安全監測.png" />
 														</div>
 														<div class="item">
-															<h5>自動化安全監測系統-安全監測</h5>
-															<img src="files/projects/REIJU_BIMIoT/網站系統-天氣資訊.png">
+															<h5>天氣資訊</h5>
+															<img src="files/projects/REIJU_BIMIoT/網站系統-天氣資訊.png" />
 														</div>
 														<div class="item">
 															<h5>工區即時溫濕度及PM2.5濃度監測</h5>
-															<img src="files/projects/REIJU_BIMIoT/工區即時溫濕度及PM2.5濃度監測.png">
+															<img src="files/projects/REIJU_BIMIoT/工區即時溫濕度及PM2.5濃度監測.png" />
 														</div>
 														<div class="item">
 															<h5>即時天氣資訊及異常警示</h5>
-															<img src="files/projects/REIJU_BIMIoT/即時天氣資訊及異常警示.png">
+															<img src="files/projects/REIJU_BIMIoT/即時天氣資訊及異常警示.png" />
 														</div>
 														<div class="item">
 															<h5>天氣特警報警示</h5>
-															<img src="files/projects/REIJU_BIMIoT/天氣特警報警示.png">
+															<img src="files/projects/REIJU_BIMIoT/天氣特警報警示.png" />
 														</div>
 														<div class="item">
 															<h5>噴霧降溫系統自動控制</h5>
-															<img src="files/projects/REIJU_BIMIoT/噴霧降溫系統自動控制.png">
+															<img src="files/projects/REIJU_BIMIoT/噴霧降溫系統自動控制.png" />
 														</div>
 														<div class="item">
 															<h5>局限空間作業安全監測</h5>
-															<img src="files/projects/REIJU_BIMIoT/局限空間作業安全監測.png">
+															<img src="files/projects/REIJU_BIMIoT/局限空間作業安全監測.png" />
 														</div>
 														<div class="item">
 															<h5>電梯井吊料口作業監測</h5>
-															<img src="files/projects/REIJU_BIMIoT/電梯井吊料口作業監測.png">
+															<img src="files/projects/REIJU_BIMIoT/電梯井吊料口作業監測.png" />
 														</div>
 														<div class="item">
 															<h5>各類訊息通知</h5>
-															<img src="files/projects/REIJU_BIMIoT/各類訊息通知.png">
+															<img src="files/projects/REIJU_BIMIoT/各類訊息通知.png" />
 														</div>
 													</div>
 												</figure>
@@ -743,23 +760,23 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>3D模型的擷圖及視角記錄</h5>
-															<img src="files/projects/REIJU_REVITAPI/3D模型的擷圖及視角記錄.png">
+															<img src="files/projects/REIJU_REVITAPI/3D模型的擷圖及視角記錄.png" />
 														</div>
 														<div class="item">
 															<h5>同一介面進行釋疑區域的3D模型及平面圖擷取作業</h5>
-															<img src="files/projects/REIJU_REVITAPI/3D模型及平面圖擷取作業.png">
+															<img src="files/projects/REIJU_REVITAPI/3D模型及平面圖擷取作業.png" />
 														</div>
 														<div class="item">
 															<h5>進行平面圖擷取時，系統自動擷取該圖所屬樓層、CAD圖號及視窗所對應的軸線範圍</h5>
-															<img src="files/projects/REIJU_REVITAPI/平面圖擷取.png">
+															<img src="files/projects/REIJU_REVITAPI/平面圖擷取.png" />
 														</div>
 														<div class="item">
 															<h5>自動進行各衝突類型的數量及回覆時間統計，自動產生及匯出統計圖</h5>
-															<img src="files/projects/REIJU_REVITAPI/統計圖.png">
+															<img src="files/projects/REIJU_REVITAPI/統計圖.png" />
 														</div>
 														<div class="item">
 															<h5>BIM專案報告PPT簡報檔自動輸出</h5>
-															<img src="files/projects/REIJU_REVITAPI/PPT簡報檔自動輸出.png">
+															<img src="files/projects/REIJU_REVITAPI/PPT簡報檔自動輸出.png" />
 														</div>
 													</div>
 												</figure>
@@ -773,19 +790,19 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>任務管理系統-資訊首頁</h5>
-															<img src="files/projects/REIJU_EMISSION/emission_web_資訊首頁.png">
+															<img src="files/projects/REIJU_EMISSION/emission_web_資訊首頁.png" />
 														</div>
 														<div class="item">
 															<h5>任務管理系統-任務指派</h5>
-															<img src="files/projects/REIJU_EMISSION/emission_web_任務指派.png">
+															<img src="files/projects/REIJU_EMISSION/emission_web_任務指派.png" />
 														</div>
 														<div class="item">
 															<h5>任務管理系統-任務處理回報</h5>
-															<img src="files/projects/REIJU_EMISSION/emission_web_任務處理回報.png">
+															<img src="files/projects/REIJU_EMISSION/emission_web_任務處理回報.png" />
 														</div>
 														<div class="item">
 															<h5>任務管理系統-任務通知訊息</h5>
-															<img src="files/projects/REIJU_EMISSION/emission_web_任務通知訊息.png">
+															<img src="files/projects/REIJU_EMISSION/emission_web_任務通知訊息.png" />
 														</div>
 													</div>
 												</figure>
@@ -799,23 +816,23 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>圖書館自動化相關系統現況架構圖</h5>
-															<a href="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.pdf" target="_blank"><img src="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.jpg"></a>
+															<a href="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.pdf" target="_blank"><img src="files/projects/NCHU_ALEPH/20120719-1_圖書館自動化相關系統現況架構圖.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>資源探索系統</h5>
-															<a href="http://dds.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_DDS.jpg"></a>
+															<a href="http://dds.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_DDS.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>館藏查詢系統</h5>
-															<a href="http://webpac.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_WebPAC.jpg"></a>
+															<a href="http://webpac.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_WebPAC.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>電子資源系統</h5>
-															<a href="http://ers.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_ERS.jpg"></a>
+															<a href="http://ers.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_ERS.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>讀者意見系統</h5>
-															<a href="http://faq.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_FAQ.jpg"></a>
+															<a href="http://faq.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_ALEPH/ALEPH_FAQ.jpg" /></a>
 														</div>
 													</div>
 												</figure>
@@ -829,39 +846,39 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>APP首頁</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-1_APP首頁.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-1_APP首頁.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>滑動式選單_左側一般性功能選單</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-3_左邊選單.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-3_左邊選單.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>滑動式選單_右側個人化及設定選單</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-4_右邊選單.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/1-4_右邊選單.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>個人借閱清單</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/2-2_借閱清單.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/2-2_借閱清單.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>主動式資訊推播</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/2-3_推播訊息.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/2-3_推播訊息.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>館藏查詢</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/3-1_館藏查詢.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/3-1_館藏查詢.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>透過鏡頭掃描ISBN查詢館藏</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/3-2_ISBN掃描查詢.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/3-2_ISBN掃描查詢.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>最新消息</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/4-1_最新消息.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/4-1_最新消息.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>借閱排行榜</h5>
-															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/4-3_借閱排行榜.jpg"></a>
+															<a href="https://play.google.com/store/apps/details?id=edu.nchu.libapp" target="_blank"><img src="files/projects/NCHU_APP/4-3_借閱排行榜.jpg" /></a>
 														</div>
 													</div>
 												</figure>
@@ -874,7 +891,7 @@
 													</figcaption>
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
-															<a href="files/projects/NCHU_STATUS/國立中興大學圖書館-資訊系統服務狀態.jpg" target="_blank"><img src="files/projects/NCHU_STATUS/NCHU_STATUS.jpg"></a>
+															<a href="files/projects/NCHU_STATUS/國立中興大學圖書館-資訊系統服務狀態.jpg" target="_blank"><img src="files/projects/NCHU_STATUS/NCHU_STATUS.jpg" /></a>
 														</div>
 													</div>
 												</figure>
@@ -888,18 +905,18 @@
 													<div id="owl-demo" class="owl-carousel">
 														<div class="item">
 															<h5>館藏主題統計系統</h5>
-															<a href="http://stats.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_APPS/NCHU_APPS-STATUS.jpg"></a>
+															<a href="http://stats.lib.nchu.edu.tw" target="_blank"><img src="files/projects/NCHU_APPS/NCHU_APPS-STATUS.jpg" /></a>
 														</div>
 														<div class="item">
 															<h5>門禁資訊系統</h5>
-															<img src="files/projects/NCHU_APPS/NCHU_APPS-GATE.jpg">
+															<img src="files/projects/NCHU_APPS/NCHU_APPS-GATE.jpg" />
 														</div>
 													</div>
 												</figure>
 											</li>
 										</ul>
 										<nav> <span class="fa nav-prev"></span> <span class="fa nav-next"></span> <span class="fa nav-close"></span> </nav>
-									</section>
+									</section>-->
 								</div>
 							</div>
 						</div>
@@ -1121,8 +1138,7 @@
 	</div>
 	<!-- content-scroller -->
 	</div>
-	<!-- Pie Chart / Skills -->
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
 	<!-- Send Email -->
 	<script type="text/javascript" src="js/sendemail.js"></script>
 	<!-- Progressbar / Skills-->
@@ -1131,30 +1147,43 @@
 	<script src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="js/head.min.js"></script>
 	<!-- Portfolio Thumbnail -->
-	<script type="text/javascript" src="js/imagesloaded.min.js"></script>
+<!--	<script type="text/javascript" src="js/imagesloaded.min.js"></script>-->
 	<script type="text/javascript" src="js/masonry.min.js"></script>
 	<script type="text/javascript" src="js/class_helper.js"></script>
-	<script type="text/javascript" src="js/grid_gallery.js"></script>
+<!--	<script type="text/javascript" src="js/grid_gallery.js"></script>-->
 	<!-- Portfolio Grid -->
-	<script>
-			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-	</script>
+<!--	<script>-->
+<!--			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );-->
+<!--	</script>-->
 	<!-- Page Scrolling -->
 	<script>
-	head.js(
-			{ jquery : "js/jquery.min.js" },
-			{ mousewheel : "js/jquery.mousewheel.js" },
-			{ mwheelIntent : "js/mwheelIntent.js" },
-			{ jScrollPane : "js/jquery.jscrollpane.min.js" },
-			{ history : "js/jquery.history.js" },
-			{ stringLib : "js/core.string.js" },
-			{ easing : "js/jquery.easing.1.3.js" },
-			{ smartresize : "js/jquery.smartresize.js" },
-			{ page : "js/jquery.page.js" }
-			);
+		function show_project_slide(project_id){
+			console.log(project_id);
+
+			new jBox('Modal', {
+				height: (window.innerHeight)*0.9,
+				width: (window.innerWidth)*0.9,
+				ajax: {
+					url: 'project.html#/'+project_id,
+					reload: 'strict'
+				}
+			}).open();
+		}
+
+		head.js(
+				{ jquery : "js/jquery.min.js" },
+				{ mousewheel : "js/jquery.mousewheel.js" },
+				{ mwheelIntent : "js/mwheelIntent.js" },
+				{ jScrollPane : "js/jquery.jscrollpane.min.js" },
+				{ history : "js/jquery.history.js" },
+				{ stringLib : "js/core.string.js" },
+				{ easing : "js/jquery.easing.1.3.js" },
+				{ smartresize : "js/jquery.smartresize.js" },
+				{ page : "js/jquery.page.js" }
+		);
 	</script>
 	<!-- Portfolio Slider-->
-	<script type="text/javascript" src="js/carousel.js"></script>
+<!--	<script type="text/javascript"  src="js/carousel.js"></script>-->
 	<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
 	<script type="text/javascript" src="js/text.rotator.js"></script>
 	<!-- All Javascript Component-->
@@ -1163,7 +1192,7 @@
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-58150377-1', 'auto');
 		ga('send', 'pageview');
 	</script>
