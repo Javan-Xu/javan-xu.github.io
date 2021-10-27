@@ -1172,6 +1172,8 @@
 
 
 	<script>
+
+		var reveal_initialized = false;
 		function show_project_slide(project_id){
 			console.log(project_id);
 
@@ -1189,16 +1191,19 @@
 					reload: true,
 					complete: function(){
 						console.log('complete');
-
-						// Reveal.initialize();
-						if (typeof deck1 != "undefined") {
-							let deck1 = new Reveal(document.querySelector('.deck1'), {
-								embedded: true,
-								keyboardCondition: 'focused' // only react to keys when focused
-							});
-							deck1.initialize();
+						if (!reveal_initialized){
+							Reveal.initialize();
+							reveal_initialized = true;
 						}
-						$('.jBox-Modal')[0].focus();
+
+						// if (typeof deck1 != "undefined") {
+						// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
+						// 		embedded: true,
+						// 		keyboardCondition: 'focused' // only react to keys when focused
+						// 	});
+						// 	deck1.initialize();
+						// }
+						// $('.jBox-Modal')[0].focus();
 					},
 					success: function(){
 						console.log('success');
