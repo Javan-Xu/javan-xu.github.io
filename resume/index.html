@@ -1189,6 +1189,7 @@
 					console.log('complete');
 					console.log('project_id: ' + project_id);
 					Reveal.slide(project_id);
+					$('#reveal').focus();
 					// if (!reveal_initialized){
 					// 	console.log('initialize');
 					// 	Reveal.initialize();
@@ -1209,7 +1210,7 @@
 				},
 				onOpenComplete: function () {
 					console.log('onOpenComplete');
-					
+
 				}
 			}
 		});
