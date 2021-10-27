@@ -1174,42 +1174,44 @@
 	<script>
 
 		var reveal_initialized = false;
+
+		var project_slide = new jBox('Modal', {
+			height: (window.innerHeight)*0.9,
+			width: (window.innerWidth)*0.9,
+
+			ajax: {
+				url: `https://javan-xu.github.io/resume/project.html#/${project_id}/0`,
+				cancelAjaxOnClose: true,
+				// reload: 'strict',
+				reload: true,
+				complete: function(){
+					if (!reveal_initialized){
+						console.log('initialize');
+						Reveal.initialize();
+						reveal_initialized = true;
+					}else{
+						console.log('sync');
+						Reveal.sync();
+					}
+
+					// if (typeof deck1 != "undefined") {
+					// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
+					// 		embedded: true,
+					// 		keyboardCondition: 'focused' // only react to keys when focused
+					// 	});
+					// 	deck1.initialize();
+					// }
+					// $('.jBox-Modal')[0].focus();
+				}
+			}
+		});
 		function show_project_slide(project_id){
 			// console.log(project_id);
 
-			$('.jBox-Modal').remove();
-			$('.jBox-overlay').remove();
+			// $('.jBox-Modal').remove();
+			// $('.jBox-overlay').remove();
 
-			new jBox('Modal', {
-				height: (window.innerHeight)*0.9,
-				width: (window.innerWidth)*0.9,
-
-				ajax: {
-					url: `https://javan-xu.github.io/resume/project.html#/${project_id}/0`,
-					cancelAjaxOnClose: true,
-					// reload: 'strict',
-					reload: true,
-					complete: function(){
-						if (!reveal_initialized){
-							console.log('initialize');
-							Reveal.initialize();
-							reveal_initialized = true;
-						}else{
-							console.log('sync');
-							Reveal.sync();
-						}
-
-						// if (typeof deck1 != "undefined") {
-						// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
-						// 		embedded: true,
-						// 		keyboardCondition: 'focused' // only react to keys when focused
-						// 	});
-						// 	deck1.initialize();
-						// }
-						// $('.jBox-Modal')[0].focus();
-					}
-				}
-			}).open();
+			project_slide.open();
 		}
 
 		head.js(
