@@ -1192,11 +1192,18 @@
 					console.log('complete');
 					console.log('project_id: ' + project_id);
 
+
+					try {
+						Reveal.slide(project_id);
+					}
+					catch (e) {
+						console.log(e);
+					}
 					$('#reveal').focus();
 					$('#slides').focus();
 					console.log('focus');
-					// Reveal.slide(project_id);
-					Reveal.slide(3)
+					//
+					// Reveal.slide(3)
 					// if (!reveal_initialized){
 					// 	console.log('initialize');
 					// 	Reveal.initialize();
