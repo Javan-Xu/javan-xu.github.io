@@ -8,7 +8,7 @@
 
 	</head>
 	<body>
-		<div class="reveal">
+		<div class="reveal deck1">
 			<div class="slides">
 				<section>
 					<section>
@@ -387,7 +387,20 @@
 			</div>
 		</div>
 
+		<script>
+			// Reveal.initialize({
+			// 	controlsTutorial: true,
+			// 	embedded: true,
+			// 	hash: false,
+			// 	// plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			// });
+			let deck1 = new Reveal(document.querySelector( '.deck1' ), {
+				embedded: true,
+				keyboardCondition: 'focused' // only react to keys when focused
+			} );
+			deck1.initialize();
 
+		</script>
 
 	
 
