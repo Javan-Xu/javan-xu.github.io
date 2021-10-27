@@ -1187,13 +1187,14 @@
 					complete: function(){
 						console.log('complete');
 
-						if (typeof deck1 != "undefined") {
-							let deck1 = new Reveal(document.querySelector('.deck1'), {
-								embedded: true,
-								keyboardCondition: 'focused' // only react to keys when focused
-							});
-							deck1.initialize();
-						}
+						Reveal.initialize();
+						// if (typeof deck1 != "undefined") {
+						// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
+						// 		embedded: true,
+						// 		keyboardCondition: 'focused' // only react to keys when focused
+						// 	});
+						// 	deck1.initialize();
+						// }
 						$('.jBox-Modal')[0].focus();
 					},
 					success: function(){
