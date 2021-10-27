@@ -1174,6 +1174,7 @@
 			console.log(project_id);
 
 			$('.jBox-Modal').remove();
+			$('.jBox-overlay').remove();
 
 			new jBox('Modal', {
 				height: (window.innerHeight)*0.9,
@@ -1185,11 +1186,13 @@
 					reload: true,
 					complete: function(){
 						console.log('complete');
-						$('.jBox-wrapper')[0].focus();
+
+						Reveal.initialize();
+						$('.jBox-Modal')[0].focus();
 					},
 					success: function(){
 						console.log('success');
-						$('.jBox-wrapper')[0].focus();
+						$('.jBox-Modal')[0].focus();
 					}
 				}
 			}).open();
