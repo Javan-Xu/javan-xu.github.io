@@ -1175,7 +1175,7 @@
 
 		var reveal_initialized = false;
 		function show_project_slide(project_id){
-			console.log(project_id);
+			// console.log(project_id);
 
 			$('.jBox-Modal').remove();
 			$('.jBox-overlay').remove();
@@ -1190,10 +1190,13 @@
 					// reload: 'strict',
 					reload: true,
 					complete: function(){
-						console.log('complete');
 						if (!reveal_initialized){
+							console.log('initialize');
 							Reveal.initialize();
 							reveal_initialized = true;
+						}else{
+							console.log('sync');
+							Reveal.sync();
 						}
 
 						// if (typeof deck1 != "undefined") {
@@ -1204,10 +1207,6 @@
 						// 	deck1.initialize();
 						// }
 						// $('.jBox-Modal')[0].focus();
-					},
-					success: function(){
-						console.log('success');
-						$('.jBox-Modal')[0].focus();
 					}
 				}
 			}).open();
