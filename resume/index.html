@@ -1206,6 +1206,7 @@
 				// 	// $('.jBox-Modal')[0].focus();
 				},
 				onOpenComplete: function () {
+					console.log('onOpenComplete');
 					Reveal.slide(project_id);
 				}
 			}
@@ -1213,6 +1214,7 @@
 		function show_project_slide(in_project_id){
 			project_slide.open();
 			project_id = in_project_id;
+			Reveal.slide(project_id);
 
 		}
 
