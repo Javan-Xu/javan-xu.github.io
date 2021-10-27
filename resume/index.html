@@ -1188,10 +1188,11 @@
 				complete: function(){
 					console.log('complete');
 					console.log('project_id: ' + project_id);
-					Reveal.slide(project_id);
+
 					$('#reveal').focus();
 					$('#slides').focus();
 					console.log('focus');
+					Reveal.slide(project_id);
 					// if (!reveal_initialized){
 					// 	console.log('initialize');
 					// 	Reveal.initialize();
