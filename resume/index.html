@@ -26,7 +26,8 @@
 	<script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="https://javan-xu.github.io/resume/plugin/reveal/reveal.css">
+	<link rel="stylesheet" href="https://javan-xu.github.io/resume/plugin/reveal/theme/league.css">
 
 <!--	<script src="https://javan-xu.github.io/resume/plugin/reveal/reveal.js"></script>-->
 
@@ -1183,15 +1184,16 @@
 				cancelAjaxOnClose: true,
 				reload: 'strict',
 				// reload: true,
-				// complete: function(){
-				// 	// if (!reveal_initialized){
-				// 	// 	console.log('initialize');
-				// 	// 	Reveal.initialize();
-				// 	// 	reveal_initialized = true;
-				// 	// }else{
-				// 	// 	console.log('sync');
-				// 	// 	Reveal.sync();
-				// 	// }
+				complete: function(){
+					console.log('complete');
+					// if (!reveal_initialized){
+					// 	console.log('initialize');
+					// 	Reveal.initialize();
+					// 	reveal_initialized = true;
+					// }else{
+					// 	console.log('sync');
+					// 	Reveal.sync();
+					// }
 				//
 				// 	// if (typeof deck1 != "undefined") {
 				// 	// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
@@ -1201,12 +1203,12 @@
 				// 	// 	deck1.initialize();
 				// 	// }
 				// 	// $('.jBox-Modal')[0].focus();
-				// }
+				}
 			}
 		});
 		function show_project_slide(project_id){
-			Reveal.slide(project_id);
 			project_slide.open();
+			Reveal.slide(project_id);
 		}
 
 		head.js(
