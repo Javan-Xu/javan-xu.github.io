@@ -1174,6 +1174,7 @@
 	<script>
 
 		var reveal_initialized = false;
+		var project_id = 0;
 
 		var project_slide = new jBox('Modal', {
 			height: (window.innerHeight)*0.9,
@@ -1203,12 +1204,16 @@
 				// 	// 	deck1.initialize();
 				// 	// }
 				// 	// $('.jBox-Modal')[0].focus();
+				},
+				onOpenComplete: function () {
+					Reveal.slide(project_id);
 				}
 			}
 		});
-		function show_project_slide(project_id){
+		function show_project_slide(in_project_id){
 			project_slide.open();
-			Reveal.slide(project_id);
+			project_id = in_project_id;
+
 		}
 
 		head.js(
