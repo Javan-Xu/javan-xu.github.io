@@ -1187,6 +1187,8 @@
 				// reload: true,
 				complete: function(){
 					console.log('complete');
+					console.log('project_id: ' + project_id);
+					Reveal.slide(project_id);
 					// if (!reveal_initialized){
 					// 	console.log('initialize');
 					// 	Reveal.initialize();
@@ -1207,14 +1209,14 @@
 				},
 				onOpenComplete: function () {
 					console.log('onOpenComplete');
-					Reveal.slide(project_id);
+					
 				}
 			}
 		});
 		function show_project_slide(in_project_id){
 			project_slide.open();
 			project_id = in_project_id;
-			Reveal.slide(project_id);
+			// Reveal.slide(project_id);
 
 		}
 
