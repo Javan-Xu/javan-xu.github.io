@@ -394,12 +394,13 @@
 			// 	hash: false,
 			// 	// plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			// });
-			let deck1 = new Reveal(document.querySelector( '.deck1' ), {
-				embedded: true,
-				keyboardCondition: 'focused' // only react to keys when focused
-			} );
-			deck1.initialize();
-
+			if (desk1 != undefined) {
+				let deck1 = new Reveal(document.querySelector('.deck1'), {
+					embedded: true,
+					keyboardCondition: 'focused' // only react to keys when focused
+				});
+				deck1.initialize();
+			}
 		</script>
 
 	
