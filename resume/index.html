@@ -1186,6 +1186,9 @@
 				reload: 'strict',
 				// reload: true,
 				complete: function(){
+					Reveal.initialize({
+						hash: true
+					});
 					console.log('complete');
 					console.log('project_id: ' + project_id);
 
