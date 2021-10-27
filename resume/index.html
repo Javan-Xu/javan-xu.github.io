@@ -29,6 +29,8 @@
 	<link rel="stylesheet" href="https://javan-xu.github.io/resume/plugin/reveal/reveal.css">
 	<link rel="stylesheet" href="https://javan-xu.github.io/resume/plugin/reveal/theme/league.css">
 
+	<script src="https://javan-xu.github.io/resume/plugin/reveal/reveal.js"></script>
+
 </head>
 <body>
 	<div id="container" class="container">
@@ -635,8 +637,6 @@
 										</ul>
 									</section>
 
-									<div class="reveal"></div>
-
 									<!-- Lightbox Popup -->
 									<!-- li的項目數量要跟前面專案數量一致，否則專案跟圖片對應會亂掉 -->
 									<!--
@@ -1169,7 +1169,7 @@
 <!--	</script>-->
 	<!-- Page Scrolling -->
 
-	<script src="https://javan-xu.github.io/resume/plugin/reveal/reveal.js"></script>
+
 
 	<script>
 		function show_project_slide(project_id){
@@ -1181,6 +1181,7 @@
 			new jBox('Modal', {
 				height: (window.innerHeight)*0.9,
 				width: (window.innerWidth)*0.9,
+
 				ajax: {
 					url: `https://javan-xu.github.io/resume/project.html#/${project_id}/0`,
 					cancelAjaxOnClose: true,
@@ -1232,7 +1233,15 @@
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-58150377-1', 'auto');
 		ga('send', 'pageview');
+
+		// Reveal.initialize({
+		// 	// controlsTutorial: true,
+		// 	// embedded: true,
+		// 	hash: false,
+		// 	// plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		// });
 	</script>
+
 
 
 
