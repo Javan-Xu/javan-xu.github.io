@@ -1195,7 +1195,11 @@
 					catch (e) {
 
 					}
-					$('#reveal').click();
+					setTimeout(function(){
+						$('#reveal').click();
+						console.log('click');
+					}, 1000);
+
 					// $('#slides').focus();
 
 					// var event = $.Event('click');
