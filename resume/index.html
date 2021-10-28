@@ -1189,8 +1189,8 @@
 					Reveal.initialize({
 						hash: true,
 						keyboard: true,
-						keyboardCondition: null,
-						focusBodyOnPageVisibilityChange: true
+						keyboardCondition: 'focused',
+						// focusBodyOnPageVisibilityChange: true
 					});
 					try {
 						Reveal.slide(project_id);
@@ -1209,7 +1209,7 @@
 					event.clientX = (window.innerWidth)*0.5;
 					event.clientY = (window.innerHeight)*0.5;
 					$('#reveal').trigger(event);
-					console.log('event click 1');
+					console.log('event click 2');
 
 					//
 					// Reveal.slide(3)
