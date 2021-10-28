@@ -1187,7 +1187,10 @@
 				// reload: true,
 				complete: function(){
 					Reveal.initialize({
-						hash: true
+						hash: true,
+						keyboard: true,
+						keyboardCondition: null,
+						focusBodyOnPageVisibilityChange: true
 					});
 					try {
 						Reveal.slide(project_id);
@@ -1206,7 +1209,7 @@
 					event.clientX = (window.innerWidth)*0.5;
 					event.clientY = (window.innerHeight)*0.5;
 					$('#reveal').trigger(event);
-					console.log('event click');
+					console.log('event click 1');
 
 					//
 					// Reveal.slide(3)
