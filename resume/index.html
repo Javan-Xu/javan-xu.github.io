@@ -1202,11 +1202,11 @@
 
 					// $('#slides').focus();
 
-					// var event = $.Event('click');
-					// event.clientX = (window.innerWidth)*0.5;
-					// event.clientY = (window.innerHeight)*0.5;
-					// $('div').trigger(event);
-					// console.log('event click');
+					var event = $.Event('click');
+					event.clientX = (window.innerWidth)*0.5;
+					event.clientY = (window.innerHeight)*0.5;
+					$('#reveal').trigger(event);
+					console.log('event click');
 
 					//
 					// Reveal.slide(3)
