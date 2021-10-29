@@ -1188,55 +1188,17 @@
 				complete: function(){
 					Reveal.initialize({
 						hash: true,
-						keyboard: true,
-						keyboardCondition: 'focused',
+						// keyboard: true,
+						// keyboardCondition: 'focused',
 						// focusBodyOnPageVisibilityChange: true
 					});
 					try {
 						Reveal.slide(project_id);
 					}
-					catch (e) {
-
-					}
-					// setTimeout(function(){
-					// 	$('#reveal').click();
-					// 	console.log('click');
-					// }, 1000);
-
-					// $('#slides').focus();
-
+					catch (e) {}
 					$('#chapterportfolio').blur();
-
-					// var event = $.Event('click');
-					// event.clientX = (window.innerWidth)*0.5;
-					// event.clientY = (window.innerHeight)*0.5;
-					// $('#reveal').trigger(event);
-					console.log('event click 3');
-
-					//
-					// Reveal.slide(3)
-					// if (!reveal_initialized){
-					// 	console.log('initialize');
-					// 	Reveal.initialize();
-					// 	reveal_initialized = true;
-					// }else{
-					// 	console.log('sync');
-					// 	Reveal.sync();
-					// }
-				//
-				// 	// if (typeof deck1 != "undefined") {
-				// 	// 	let deck1 = new Reveal(document.querySelector('.deck1'), {
-				// 	// 		embedded: true,
-				// 	// 		keyboardCondition: 'focused' // only react to keys when focused
-				// 	// 	});
-				// 	// 	deck1.initialize();
-				// 	// }
-				// 	// $('.jBox-Modal')[0].focus();
+					console.log('aaa');
 				},
-				onOpenComplete: function () {
-					console.log('onOpenComplete');
-
-				}
 			}
 		});
 		function show_project_slide(in_project_id){
